@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>project-management_doc - List</title>
+   <style type="text/css">
+      a, a:visited {
+         color: blue;
+      }
+   </style>
+   </script>
+</head>
+<body>
 <?php
 
 /*print '<pre>';
@@ -23,22 +35,22 @@ $apiClient->setAccountBaseDomain($_ENV['AMOCRM_SUB_DOMAIN'])
 
 $accountModel = $apiClient->account()->getCurrent();
 
-printf('<h2>Добро пожаловать, %s!</h2>',$accountModel->getName());
+printf('<h2>Welcome to website, %s!</h2>',$accountModel->getName());
 
 print<<<EndMarker
 <h3>
-Желаете выполнить скрипт
+Would you like to run
 <a href="http://localhost/leads_update_pipeline_status.php" target="_blank">leads_update_pipeline_status.php</a>
-или
-<a href="http://localhost/leads_clone_deep_with_new_status.php" target="_blank">leads_clone_deep_with_new_status.php</a>?
+or
+<a href="http://localhost/leads_clone_deep_with_new_status.php" target="_blank">leads_clone_deep_with_new_status.php</a> scripts?
 </h3>
 EndMarker;
 
 $extraInfo=<<<EndMarker
 <hr style="margin-top: 3rem; margin-bottom: 1rem">
 <pre>
-Техническая информация
-======================
+Technical information
+=====================
 </pre>
 EndMarker;
 
@@ -47,5 +59,10 @@ print $extraInfo;
 dump_nice_l($accountModel->toArray());
 
 print<<<EndMarker
-<p style="font-size: 0.7rem">Для создания файла с токеном доступа, перейдите по ссылке <span>http://localhost/_create_access_token_file.php<span>, предварительно обновив значение переменной AMOCRM_AUTHORIZATION_CODE в исходном коде приложения.</p>
+<p style="font-size: 0.7rem">In order to create an access token file, please follow these steps:
+1) Set AMOCRM_AUTHORIZATION_CODE variable in the .env.sensitive.data file.
+2) Follow the http://localhost/_create_access_token_file.php link.</p>
 EndMarker;
+?>
+</body>
+</html>

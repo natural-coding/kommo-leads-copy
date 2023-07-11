@@ -72,4 +72,3 @@
 "64 TasksCollectionCopierAndLinker works!! logging bugs removed!!"
 "65 NotesCollectionCopierAndLinker works"
 "66 leads_clone_deep_with_new_status it works empty filter"
-"67 Rubikon ftp"

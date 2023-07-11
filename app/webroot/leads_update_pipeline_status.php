@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>project-management_doc - List</title>
+   <style type="text/css">
+   </style>
+   </script>
+</head>
+<body>
 <?php
 
 require_once __DIR__ . '/../src/bootstrap.php';
@@ -26,7 +35,6 @@ $apiClient = new AmoCRMApiClient(
 $apiClient->setAccountBaseDomain($_ENV['AMOCRM_SUB_DOMAIN'])
    ->setAccessToken(Framework\Utils\getAccessToken());
 
-//Создадим фильтр по id сделки и ответственному пользователю
 $filter = (new LeadsFilter())
    ->setStatuses([
       [
@@ -58,6 +66,17 @@ if ($changeStatus_LeadsColl->count() > 0)
 
 print '<pre>';
 printf(
+   'Leads selected (pipeline %s, status %s): %d<br>',
+   $_ENV['LEADS_UPDATE_PIPELINE_ID'],
+   $_ENV['LEADS_UPDATE_SRC_STATUS_ID'],
+   $filterPrice_LeadsColl->count()
+);
+printf('Items to modify: %d<br>',$changeStatus_LeadsColl->count());
+printf('Items changed: %d<br>', isset($updatedLeads_LeadsColl) ? $updatedLeads_LeadsColl->count() : 0);
+print '</pre>';
+
+/*print '<pre>';
+printf(
    'Выбрано сделок из воронки %s на этапе %s: %d<br>',
    $_ENV['LEADS_UPDATE_PIPELINE_ID'],
    $_ENV['LEADS_UPDATE_SRC_STATUS_ID'],
@@ -65,4 +84,7 @@ printf(
 );
 printf('Отобрано сделок для изменения: %d<br>',$changeStatus_LeadsColl->count());
 printf('Изменено элементов: %d<br>', isset($updatedLeads_LeadsColl) ? $updatedLeads_LeadsColl->count() : 0);
-print '</pre>';
+print '</pre>';*/
+?>
+</body>
+</html>

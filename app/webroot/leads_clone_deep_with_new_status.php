@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>project-management_doc - List</title>
+   <style type="text/css">
+   </style>
+   </script>
+</head>
+<body>
 <?php
 
 require_once __DIR__ . '/../src/bootstrap.php';
@@ -46,8 +55,10 @@ $filter = (new LeadsFilter())
          'status_id' => (int) $_ENV['LEADS_DEEP_CLONE_SRC_STATUS_ID']
       ]
    ])
-   ->setOrder('created_at', HasOrderInterface::SORT_ASC);
-   
+   ->setOrder('created_at', HasOrderInterface::SORT_ASC)
+   ->setPrice((int) $_ENV['LEADS_DEEP_CLONE_EXACT_PRICE']);
+   // ->setIds([888]);
+
 /**
  * AmoCRM\Collections\Leads\LeadsCollection;
  */
@@ -101,6 +112,28 @@ if ($source_LeadsColl->count() > 0) {
 
 print '<pre>';
 printf(
+   'Leads to copy (pipeline %s, status %s): %d<br>',   
+   $_ENV['LEADS_DEEP_CLONE_PIPELINE_ID'],
+   $_ENV['LEADS_DEEP_CLONE_SRC_STATUS_ID'],
+   $report->LeadsToCopyCount
+);
+
+printf(
+   'Leads copied (pipeline %s, new status %s): %d<br>',
+   $_ENV['LEADS_DEEP_CLONE_PIPELINE_ID'],
+   $_ENV['LEADS_DEEP_CLONE_DEST_STATUS_ID'],
+   $report->LeadsCopied
+);
+
+
+printf('Notes to copy: %d<br>',$report->NotesToCopyCount);
+printf('Notes copied: %d<br>',$report->NotesCopied);
+
+printf('Tasks to copy: %d<br>',$report->TasksToCopyCount);
+printf('Tasks copied: %d<br>',$report->TasksCopied);
+print '</pre>';
+/*print '<pre>';
+printf(
    'Выбрано сделок для копирования из воронки %s на этапе %s: %d<br>',
    $_ENV['LEADS_DEEP_CLONE_PIPELINE_ID'],
    $_ENV['LEADS_DEEP_CLONE_SRC_STATUS_ID'],
@@ -120,4 +153,7 @@ printf('Примечаний скопировано: %d<br>',$report->NotesCopie
 
 printf('Выбрано задач для копирования: %d<br>',$report->TasksToCopyCount);
 printf('Задач скопировано: %d<br>',$report->TasksCopied);
-print '</pre>';
+print '</pre>';*/
+?>
+</body>
+</html>
