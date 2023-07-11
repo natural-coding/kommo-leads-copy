@@ -1,0 +1,6 @@
+{
+    "require": {
+        "amocrm/amocrm-api-library": "^1.0",
+        "symfony/dotenv": "^5.4"
+    }
+}

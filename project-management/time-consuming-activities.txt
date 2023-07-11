@@ -1,0 +1,27 @@
+Потери времени
+==============
+
+1.
+https://giterhub.com/repository/issues/amocrm/amocrm-api-php/337
+
+2.
+xcopy, exclude dir
+
+3.
+https://github.com/amocrm/amocrm-api-php/issues/139
+
+4.
+$filter = (new LeadsFilter())
+   ->setStatuses([
+      [
+         'pipeline_id' => (int) $_ENV['LEADS_DEEP_CLONE_PIPELINE_ID'],
+         'status_id' => (int) $_ENV['LEADS_DEEP_CLONE_SRC_STATUS_ID']
+      ]
+   ])
+   ->setOrder('created_at', HasOrderInterface::SORT_ASC)
+   // ->setIds([30503361]);
+   // ->setIds([30492741]);   
+   // ->setIds([30498901]);
+   ->setIds([-1]);
+
+Выбираются ВСЕ сделки, если id = -1?!

@@ -1,0 +1,486 @@
+
+<!-- saved from url=(0053)http://localhost/leads_clone_deep_with_new_status.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><p style="margin-top: 2rem">AmoCRM\Exceptions\AmoCRMApiNoContentException =&gt; object dump real |AmoCRMApiErrorResponseException|</p><pre>Array
+(
+    [0] =&gt; AmoCRM\Exceptions\AmoCRMApiErrorResponseException Object
+        (
+            [validationErrors:protected] =&gt; Array
+                (
+                    [0] =&gt; Array
+                        (
+                            [request_id] =&gt; 0
+                            [errors] =&gt; Array
+                                (
+                                    [0] =&gt; Array
+                                        (
+                                            [code] =&gt; FieldMissing
+                                            [path] =&gt; text
+                                            [detail] =&gt; This field is missing.
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [errorCode:protected] =&gt; 400
+            [description:protected] =&gt; Request validation failed
+            [title:protected] =&gt; Response has validation errors
+            [lastRequestInfo:protected] =&gt; Array
+                (
+                    [last_http_method] =&gt; POST
+                    [last_method] =&gt; https://softwoodforest.amocrm.ru/api/v4/tasks
+                    [last_body] =&gt; Array
+                        (
+                            [0] =&gt; Array
+                                (
+                                    [responsible_user_id] =&gt; 9796182
+                                    [duration] =&gt; 0
+                                    [entity_type] =&gt; leads
+                                    [entity_id] =&gt; 31219749
+                                    [complete_till] =&gt; 1689627540
+                                    [task_type_id] =&gt; 2974734
+                                    [request_id] =&gt; 0
+                                )
+
+                            [1] =&gt; Array
+                                (
+                                    [text] =&gt; Текст задачи Связаться
+                                    [responsible_user_id] =&gt; 9796182
+                                    [duration] =&gt; 0
+                                    [entity_type] =&gt; leads
+                                    [entity_id] =&gt; 31219749
+                                    [complete_till] =&gt; 1689627540
+                                    [task_type_id] =&gt; 1
+                                    [request_id] =&gt; 1
+                                )
+
+                        )
+
+                    [last_query_params] =&gt; Array
+                        (
+                        )
+
+                    [last_response] =&gt; {"validation-errors":[{"request_id":"0","errors":[{"code":"FieldMissing","path":"text","detail":"This field is missing."}]}],"title":"Bad Request","type":"https://httpstatus.es/400","status":400,"detail":"Request validation failed"}
+                    [last_response_code] =&gt; 400
+                    [last_request_id] =&gt; 4ed60b61961dcd53197f0cf4ea1dfe5e
+                    [jquery_call] =&gt; 
+$.ajax({
+    url: "https://softwoodforest.amocrm.ru/api/v4/tasks",
+    data: JSON.stringify([{"responsible_user_id":9796182,"duration":0,"entity_type":"leads","entity_id":31219749,"complete_till":1689627540,"task_type_id":2974734,"request_id":"0"},{"text":"Текст задачи Связаться","responsible_user_id":9796182,"duration":0,"entity_type":"leads","entity_id":31219749,"complete_till":1689627540,"task_type_id":1,"request_id":"1"}]),
+    type: "POST",
+    contentType: "application/json"
+});
+                    [curl_call] =&gt; curl "https://softwoodforest.amocrm.ru/api/v4/tasks" -X "POST" -d"0%5Bresponsible_user_id%5D=9796182&amp;0%5Bduration%5D=0&amp;0%5Bentity_type%5D=leads&amp;0%5Bentity_id%5D=31219749&amp;0%5Bcomplete_till%5D=1689627540&amp;0%5Btask_type_id%5D=2974734&amp;0%5Brequest_id%5D=0&amp;1%5Btext%5D=%D0%A2%D0%B5%D0%BA%D1%81%D1%82+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8+%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D1%82%D1%8C%D1%81%D1%8F&amp;1%5Bresponsible_user_id%5D=9796182&amp;1%5Bduration%5D=0&amp;1%5Bentity_type%5D=leads&amp;1%5Bentity_id%5D=31219749&amp;1%5Bcomplete_till%5D=1689627540&amp;1%5Btask_type_id%5D=1&amp;1%5Brequest_id%5D=1"
+                    [timestamp] =&gt; 1688982759
+                )
+
+            [message:protected] =&gt; Response has validation errors
+            [string:Exception:private] =&gt; 
+            [code:protected] =&gt; 400
+            [file:protected] =&gt; I:\.prj\59-amocrm-integration\03-api-test\app\vendor\amocrm\amocrm-api-library\src\AmoCRM\Client\AmoCRMApiRequest.php
+            [line:protected] =&gt; 564
+            [trace:Exception:private] =&gt; Array
+                (
+                    [0] =&gt; Array
+                        (
+                            [file] =&gt; I:\.prj\59-amocrm-integration\03-api-test\app\vendor\amocrm\amocrm-api-library\src\AmoCRM\Client\AmoCRMApiRequest.php
+                            [line] =&gt; 604
+                            [function] =&gt; checkHttpStatus
+                            [class] =&gt; AmoCRM\Client\AmoCRMApiRequest
+                            [type] =&gt; -&gt;
+                            [args] =&gt; Array
+                                (
+                                    [0] =&gt; GuzzleHttp\Psr7\Response Object
+                                        (
+                                            [reasonPhrase:GuzzleHttp\Psr7\Response:private] =&gt; Bad Request
+                                            [statusCode:GuzzleHttp\Psr7\Response:private] =&gt; 400
+                                            [headers:GuzzleHttp\Psr7\Response:private] =&gt; Array
+                                                (
+                                                    [Server] =&gt; Array
+                                                        (
+                                                            [0] =&gt; nginx
+                                                        )
+
+                                                    [Date] =&gt; Array
+                                                        (
+                                                            [0] =&gt; Mon, 10 Jul 2023 09:53:15 GMT
+                                                        )
+
+                                                    [Content-Type] =&gt; Array
+                                                        (
+                                                            [0] =&gt; application/problem+json
+                                                        )
+
+                                                    [Transfer-Encoding] =&gt; Array
+                                                        (
+                                                            [0] =&gt; chunked
+                                                        )
+
+                                                    [Connection] =&gt; Array
+                                                        (
+                                                            [0] =&gt; keep-alive
+                                                        )
+
+                                                    [Set-Cookie] =&gt; Array
+                                                        (
+                                                            [0] =&gt; session_id=rblut1nps87pm0ubmj8fei580l; path=/; domain=.amocrm.ru; secure; HttpOnly
+                                                            [1] =&gt; user_lang=ru; expires=Mon, 10-Jul-2028 09:53:15 GMT; Max-Age=157852800; path=/; domain=.amocrm.ru
+                                                        )
+
+                                                    [Expires] =&gt; Array
+                                                        (
+                                                            [0] =&gt; Thu, 19 Nov 1981 08:52:00 GMT
+                                                        )
+
+                                                    [Cache-Control] =&gt; Array
+                                                        (
+                                                            [0] =&gt; no-store, no-cache, must-revalidate
+                                                        )
+
+                                                    [Pragma] =&gt; Array
+                                                        (
+                                                            [0] =&gt; no-cache
+                                                        )
+
+                                                    [X-Request-Id] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 4ed60b61961dcd53197f0cf4ea1dfe5e
+                                                        )
+
+                                                    [X-Runtime-Started-At] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 1688982795284
+                                                        )
+
+                                                    [X-Runtime-Ended-At] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 1688982795468
+                                                        )
+
+                                                    [X-Runtime-Generated] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 0,1841
+                                                        )
+
+                                                )
+
+                                            [headerNames:GuzzleHttp\Psr7\Response:private] =&gt; Array
+                                                (
+                                                    [server] =&gt; Server
+                                                    [date] =&gt; Date
+                                                    [content-type] =&gt; Content-Type
+                                                    [transfer-encoding] =&gt; Transfer-Encoding
+                                                    [connection] =&gt; Connection
+                                                    [set-cookie] =&gt; Set-Cookie
+                                                    [expires] =&gt; Expires
+                                                    [cache-control] =&gt; Cache-Control
+                                                    [pragma] =&gt; Pragma
+                                                    [x-request-id] =&gt; X-Request-Id
+                                                    [x-runtime-started-at] =&gt; X-Runtime-Started-At
+                                                    [x-runtime-ended-at] =&gt; X-Runtime-Ended-At
+                                                    [x-runtime-generated] =&gt; X-Runtime-Generated
+                                                )
+
+                                            [protocol:GuzzleHttp\Psr7\Response:private] =&gt; 1.1
+                                            [stream:GuzzleHttp\Psr7\Response:private] =&gt; GuzzleHttp\Psr7\Stream Object
+                                                (
+                                                    [stream:GuzzleHttp\Psr7\Stream:private] =&gt; Resource id #132
+                                                    [size:GuzzleHttp\Psr7\Stream:private] =&gt; 
+                                                    [seekable:GuzzleHttp\Psr7\Stream:private] =&gt; 1
+                                                    [readable:GuzzleHttp\Psr7\Stream:private] =&gt; 1
+                                                    [writable:GuzzleHttp\Psr7\Stream:private] =&gt; 1
+                                                    [uri:GuzzleHttp\Psr7\Stream:private] =&gt; php://temp
+                                                    [customMetadata:GuzzleHttp\Psr7\Stream:private] =&gt; Array
+                                                        (
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] =&gt; Array
+                                        (
+                                            [validation-errors] =&gt; Array
+                                                (
+                                                    [0] =&gt; Array
+                                                        (
+                                                            [request_id] =&gt; 0
+                                                            [errors] =&gt; Array
+                                                                (
+                                                                    [0] =&gt; Array
+                                                                        (
+                                                                            [code] =&gt; FieldMissing
+                                                                            [path] =&gt; text
+                                                                            [detail] =&gt; This field is missing.
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [title] =&gt; Bad Request
+                                            [type] =&gt; https://httpstatus.es/400
+                                            [status] =&gt; 400
+                                            [detail] =&gt; Request validation failed
+                                        )
+
+                                )
+
+                        )
+
+                    [1] =&gt; Array
+                        (
+                            [file] =&gt; I:\.prj\59-amocrm-integration\03-api-test\app\vendor\amocrm\amocrm-api-library\src\AmoCRM\Client\AmoCRMApiRequest.php
+                            [line] =&gt; 197
+                            [function] =&gt; parseResponse
+                            [class] =&gt; AmoCRM\Client\AmoCRMApiRequest
+                            [type] =&gt; -&gt;
+                            [args] =&gt; Array
+                                (
+                                    [0] =&gt; GuzzleHttp\Psr7\Response Object
+                                        (
+                                            [reasonPhrase:GuzzleHttp\Psr7\Response:private] =&gt; Bad Request
+                                            [statusCode:GuzzleHttp\Psr7\Response:private] =&gt; 400
+                                            [headers:GuzzleHttp\Psr7\Response:private] =&gt; Array
+                                                (
+                                                    [Server] =&gt; Array
+                                                        (
+                                                            [0] =&gt; nginx
+                                                        )
+
+                                                    [Date] =&gt; Array
+                                                        (
+                                                            [0] =&gt; Mon, 10 Jul 2023 09:53:15 GMT
+                                                        )
+
+                                                    [Content-Type] =&gt; Array
+                                                        (
+                                                            [0] =&gt; application/problem+json
+                                                        )
+
+                                                    [Transfer-Encoding] =&gt; Array
+                                                        (
+                                                            [0] =&gt; chunked
+                                                        )
+
+                                                    [Connection] =&gt; Array
+                                                        (
+                                                            [0] =&gt; keep-alive
+                                                        )
+
+                                                    [Set-Cookie] =&gt; Array
+                                                        (
+                                                            [0] =&gt; session_id=rblut1nps87pm0ubmj8fei580l; path=/; domain=.amocrm.ru; secure; HttpOnly
+                                                            [1] =&gt; user_lang=ru; expires=Mon, 10-Jul-2028 09:53:15 GMT; Max-Age=157852800; path=/; domain=.amocrm.ru
+                                                        )
+
+                                                    [Expires] =&gt; Array
+                                                        (
+                                                            [0] =&gt; Thu, 19 Nov 1981 08:52:00 GMT
+                                                        )
+
+                                                    [Cache-Control] =&gt; Array
+                                                        (
+                                                            [0] =&gt; no-store, no-cache, must-revalidate
+                                                        )
+
+                                                    [Pragma] =&gt; Array
+                                                        (
+                                                            [0] =&gt; no-cache
+                                                        )
+
+                                                    [X-Request-Id] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 4ed60b61961dcd53197f0cf4ea1dfe5e
+                                                        )
+
+                                                    [X-Runtime-Started-At] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 1688982795284
+                                                        )
+
+                                                    [X-Runtime-Ended-At] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 1688982795468
+                                                        )
+
+                                                    [X-Runtime-Generated] =&gt; Array
+                                                        (
+                                                            [0] =&gt; 0,1841
+                                                        )
+
+                                                )
+
+                                            [headerNames:GuzzleHttp\Psr7\Response:private] =&gt; Array
+                                                (
+                                                    [server] =&gt; Server
+                                                    [date] =&gt; Date
+                                                    [content-type] =&gt; Content-Type
+                                                    [transfer-encoding] =&gt; Transfer-Encoding
+                                                    [connection] =&gt; Connection
+                                                    [set-cookie] =&gt; Set-Cookie
+                                                    [expires] =&gt; Expires
+                                                    [cache-control] =&gt; Cache-Control
+                                                    [pragma] =&gt; Pragma
+                                                    [x-request-id] =&gt; X-Request-Id
+                                                    [x-runtime-started-at] =&gt; X-Runtime-Started-At
+                                                    [x-runtime-ended-at] =&gt; X-Runtime-Ended-At
+                                                    [x-runtime-generated] =&gt; X-Runtime-Generated
+                                                )
+
+                                            [protocol:GuzzleHttp\Psr7\Response:private] =&gt; 1.1
+                                            [stream:GuzzleHttp\Psr7\Response:private] =&gt; GuzzleHttp\Psr7\Stream Object
+                                                (
+                                                    [stream:GuzzleHttp\Psr7\Stream:private] =&gt; Resource id #132
+                                                    [size:GuzzleHttp\Psr7\Stream:private] =&gt; 
+                                                    [seekable:GuzzleHttp\Psr7\Stream:private] =&gt; 1
+                                                    [readable:GuzzleHttp\Psr7\Stream:private] =&gt; 1
+                                                    [writable:GuzzleHttp\Psr7\Stream:private] =&gt; 1
+                                                    [uri:GuzzleHttp\Psr7\Stream:private] =&gt; php://temp
+                                                    [customMetadata:GuzzleHttp\Psr7\Stream:private] =&gt; Array
+                                                        (
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] =&gt; Array
+                        (
+                            [file] =&gt; I:\.prj\59-amocrm-integration\03-api-test\app\vendor\amocrm\amocrm-api-library\src\AmoCRM\EntitiesServices\BaseEntity.php
+                            [line] =&gt; 191
+                            [function] =&gt; post
+                            [class] =&gt; AmoCRM\Client\AmoCRMApiRequest
+                            [type] =&gt; -&gt;
+                            [args] =&gt; Array
+                                (
+                                    [0] =&gt; api/v4/tasks
+                                    [1] =&gt; Array
+                                        (
+                                            [0] =&gt; Array
+                                                (
+                                                    [responsible_user_id] =&gt; 9796182
+                                                    [duration] =&gt; 0
+                                                    [entity_type] =&gt; leads
+                                                    [entity_id] =&gt; 31219749
+                                                    [complete_till] =&gt; 1689627540
+                                                    [task_type_id] =&gt; 2974734
+                                                    [request_id] =&gt; 0
+                                                )
+
+                                            [1] =&gt; Array
+                                                (
+                                                    [text] =&gt; Текст задачи Связаться
+                                                    [responsible_user_id] =&gt; 9796182
+                                                    [duration] =&gt; 0
+                                                    [entity_type] =&gt; leads
+                                                    [entity_id] =&gt; 31219749
+                                                    [complete_till] =&gt; 1689627540
+                                                    [task_type_id] =&gt; 1
+                                                    [request_id] =&gt; 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] =&gt; Array
+                        (
+                            [file] =&gt; I:\.prj\59-amocrm-integration\03-api-test\app\src\AmoCloud\TasksCollectionCopierAndLinker.php
+                            [line] =&gt; 87
+                            [function] =&gt; add
+                            [class] =&gt; AmoCRM\EntitiesServices\BaseEntity
+                            [type] =&gt; -&gt;
+                            [args] =&gt; Array
+                                (
+                                    [0] =&gt; AmoCRM\Collections\TasksCollection Object
+                                        (
+                                            [data:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; AmoCRM\Models\TaskModel Object
+                                                        (
+                                                            [id:protected] =&gt; 
+                                                            [responsibleUserId:protected] =&gt; 9796182
+                                                            [groupId:protected] =&gt; 
+                                                            [createdBy:protected] =&gt; 
+                                                            [updatedBy:protected] =&gt; 
+                                                            [createdAt:protected] =&gt; 
+                                                            [updatedAt:protected] =&gt; 
+                                                            [accountId:protected] =&gt; 
+                                                            [duration:protected] =&gt; 0
+                                                            [entityId:protected] =&gt; 31219749
+                                                            [entityType:protected] =&gt; leads
+                                                            [isCompleted:protected] =&gt; 
+                                                            [taskTypeId:protected] =&gt; 2974734
+                                                            [text:protected] =&gt; 
+                                                            [result:protected] =&gt; 
+                                                            [completeTill:protected] =&gt; 1689627540
+                                                            [requestId:protected] =&gt; 0
+                                                        )
+
+                                                    [1] =&gt; AmoCRM\Models\TaskModel Object
+                                                        (
+                                                            [id:protected] =&gt; 
+                                                            [responsibleUserId:protected] =&gt; 9796182
+                                                            [groupId:protected] =&gt; 
+                                                            [createdBy:protected] =&gt; 
+                                                            [updatedBy:protected] =&gt; 
+                                                            [createdAt:protected] =&gt; 
+                                                            [updatedAt:protected] =&gt; 
+                                                            [accountId:protected] =&gt; 
+                                                            [duration:protected] =&gt; 0
+                                                            [entityId:protected] =&gt; 31219749
+                                                            [entityType:protected] =&gt; leads
+                                                            [isCompleted:protected] =&gt; 
+                                                            [taskTypeId:protected] =&gt; 1
+                                                            [text:protected] =&gt; Текст задачи Связаться
+                                                            [result:protected] =&gt; 
+                                                            [completeTill:protected] =&gt; 1689627540
+                                                            [requestId:protected] =&gt; 1
+                                                        )
+
+                                                )
+
+                                            [nextPageLink:AmoCRM\Collections\TasksCollection:private] =&gt; 
+                                            [prevPageLink:AmoCRM\Collections\TasksCollection:private] =&gt; 
+                                        )
+
+                                )
+
+                        )
+
+                    [4] =&gt; Array
+                        (
+                            [file] =&gt; I:\.prj\59-amocrm-integration\03-api-test\app\webroot\leads_clone_deep_with_new_status.php
+                            [line] =&gt; 81
+                            [function] =&gt; doCopy
+                            [class] =&gt; AmoCloud\TasksCollectionCopierAndLinker
+                            [type] =&gt; -&gt;
+                            [args] =&gt; Array
+                                (
+                                    [0] =&gt; Array
+                                        (
+                                            [30503577] =&gt; 31219749
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [previous:Exception:private] =&gt; 
+        )
+
+)
+</pre><input id="input_for_copy" style="position: absolute; left: -9999px;"></body></html>
