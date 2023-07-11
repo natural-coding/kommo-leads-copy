@@ -10,7 +10,7 @@ Sending requests to Kommo API in order to clone leads records deep
 - [**src**](./app) => Web application
 - [**project-management**](./project-management)
    - [**!transactions-and-CAP-theorem**](./project-management/!transactions-and-CAP-theorem) => Notes about it ;-)
-   - [**amocrm-support**](./project-management/amocrm-support) => An unfinished letter to support team :-)
+   - [**amocrm-support**](./project-management/amocrm-support) => An unfinished letter to the support team :-)
    - [**doc**](./project-management/doc) => Kommo API classes documentation I have created (for easy coding! :-))
    - [**doc_src_copy**](./project-management/doc_src_copy) => Copies frequently used files in Kommo API
    - [**screenshots**](./project-management/screenshots) => Self-explained!!
